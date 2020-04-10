@@ -8,10 +8,37 @@ body {
   display: none;
 }
 
+.imgContainer {
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  
+}
+
+.images {
+  display: inline-block;
+}
+
+.pizza {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.topping {
+  position: absolute;
+  top: 0;
+  left: 177px;
+}
+
+img {
+  width: 40%;
+}
 
 #orderForm {
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 700px;
   padding: 50px;
   position: absolute;
   margin: auto;
