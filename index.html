@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Austin's Pizza Parlor</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="orderForm">
+        <h3>Pizza Order</h3>
+        <div class="form-group">
+          <label for="pizza-size">Choose Your Size</label>
+          <select class="form-control" id="pizza-size">
+            <option value="small">Small (10")</option>
+            <option value="medium">Medium (12")</option>
+            <option value="large">Large (14")</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="itemPanel">
+        <ul class="order">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

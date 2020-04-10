@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 0, 0, 0.692);
+}
+
+.itemPanel {
+  display: none;
+}
+
+
+#orderForm {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  background-color:#ccc;
+
+}
