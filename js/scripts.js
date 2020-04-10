@@ -38,6 +38,11 @@ $(document).ready(function() {
     return toppings
   };
 
+  $("input[name='toppings_select']").click(function(event) {
+    
+
+  });
+
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
     var size_selection = $("#pizza-size :selected").val();
