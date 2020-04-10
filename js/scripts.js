@@ -44,21 +44,33 @@ $(document).ready(function() {
   $("input[name='toppings_select']").change(function() {
     if($(this).prop("checked")) { 
       if($(this).attr('id') === "checkpepperoni") {
-        $(".imgContainer").append("<img src= 'img/pepperoni.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/pepperoni.png' class='topping' id= 'pepImg'>");
       } else if ($(this).attr('id') === "checksausage") {
-        $(".imgContainer").append("<img src= 'img/sausage.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/sausage.png' class='topping' id= 'sausImg'>");
       } else if ($(this).attr('id') === "checkbacon") {
-        $(".imgContainer").append("<img src= 'img/bacon.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/bacon.png' class='topping' id= 'bacImg'>");
       } else if ($(this).attr('id') === "checkpeppers") {
-        $(".imgContainer").append("<img src= 'img/bananapeppers.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/bananapeppers.png' class='topping' id= 'banImg'>");
       } else if ($(this).attr('id') === "checkolives") {
-        $(".imgContainer").append("<img src= 'img/olives.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/olives.png' class='topping' id= 'oliImg'>");
       } else {
-        $(".imgContainer").append("<img src= 'img/mushrooms.png' class='topping'>");
+        $(".imgContainer").append("<img src= 'img/mushrooms.png' class='topping' id= 'mushImg'>");
       }
-    };
-
-
+    } else {
+        if($(this).attr('id') === "checkpepperoni") {
+          $("#pepImg").remove();
+        } else if ($(this).attr('id') === "checksausage") {
+          $("#sausImg").remove();
+        } else if ($(this).attr('id') === "checkbacon") {
+          $("#bacImg").remove();
+        } else if ($(this).attr('id') === "checkpeppers") {
+          $("#banImg").remove();
+        } else if ($(this).attr('id') === "checkolives") {
+          $("#oliImg").remove();
+        } else {
+          $("#mushImg").remove();
+        }
+    }
   });
     
 
