@@ -12,12 +12,49 @@
       <form id="orderForm">
         <h3>Pizza Order</h3>
         <div class="form-group">
-          <label for="pizza-size">Choose Your Size</label>
+          <label for="pizza-size" class="label-header">Choose Your Size</label>
           <select class="form-control" id="pizza-size">
             <option value="small">Small (10")</option>
             <option value="medium">Medium (12")</option>
             <option value="large">Large (14")</option>
           </select>
+        </div>
+        <label class="label-header">Choose Your Toppings</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="pepperoni" id="checkpepperoni">
+          <label class="form-check-label" for="checkpepperoni">
+            Pepperoni
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="sausage" id="checksausage">
+          <label class="form-check-label" for="checksausage">
+            Sausage
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="bacon" id="checkbacon">
+          <label class="form-check-label" for="checkbacon">
+            Bacon
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="peppers" id="checkpeppers">
+          <label class="form-check-label" for="checkpeppers">
+            Banana Peppers
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="olives" id="checkolives">
+          <label class="form-check-label" for="checkolives">
+            Olives
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="mushrooms" id="checkmushrooms">
+          <label class="form-check-label" for="checkmushrooms">
+            Mushrooms
+          </label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
