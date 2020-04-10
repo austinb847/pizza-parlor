@@ -28,6 +28,9 @@ console.log(pizza.price_toppings); */
 
 //UI logic
 
+
+
+
 $(document).ready(function() {
 
   var createToppingsArray = function(topping_selections) {
@@ -38,10 +41,27 @@ $(document).ready(function() {
     return toppings
   };
 
-  $("input[name='toppings_select']").click(function(event) {
-    
+  $("input[name='toppings_select']").change(function() {
+    if($(this).prop("checked")) { 
+      if($(this).attr('id') === "checkpepperoni") {
+        $(".imgContainer").append("<img src= 'img/pepperoni.png' class='topping'>");
+      } else if ($(this).attr('id') === "checksausage") {
+        $(".imgContainer").append("<img src= 'img/sausage.png' class='topping'>");
+      } else if ($(this).attr('id') === "checkbacon") {
+        $(".imgContainer").append("<img src= 'img/bacon.png' class='topping'>");
+      } else if ($(this).attr('id') === "checkpeppers") {
+        $(".imgContainer").append("<img src= 'img/bananapeppers.png' class='topping'>");
+      } else if ($(this).attr('id') === "checkolives") {
+        $(".imgContainer").append("<img src= 'img/olives.png' class='topping'>");
+      } else {
+        $(".imgContainer").append("<img src= 'img/mushrooms.png' class='topping'>");
+      }
+    };
+
 
   });
+    
+
 
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
