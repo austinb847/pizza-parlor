@@ -79,8 +79,8 @@ $(document).ready(function() {
     $("form#orderForm").hide();
     $(".itemPanel").show();
     
-    $(".order").append("<li>" + "Size cost: " + pizza.price_size + "</li>");
-    $(".order").append("<li>" + "Toppings cost: " + pizza.price_toppings + "</li>");
-    $(".itemPanel").append("<h3>" + "Your order Total: " + price);
+    $(".order").append("<li>" + "Size cost: " + "$" + pizza.price_size + "</li>");
+    $(".order").append("<li>" + "Toppings cost: " + "$" + pizza.price_toppings + "</li>");
+    $(".itemPanel").append("<h3>" + "Your order Total: " + "$" + price);
   });
 });
