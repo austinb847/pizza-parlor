@@ -1,7 +1,20 @@
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+}
+
+.title {
+  margin-top: -30px;
+  padding: 10px;
+}
+label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 0, 0, 0.692);
 }
 
 .itemPanel {
@@ -16,8 +29,12 @@ body {
   
 }
 
-.images {
-  display: inline-block;
+.label-header {
+  font-size: 20px;
+}
+
+button {
+  margin-top: 15px;
 }
 
 .pizza {
@@ -29,16 +46,16 @@ body {
 .topping {
   position: absolute;
   top: 0;
-  left: 177px;
+  left: 183px;
 }
 
 img {
   width: 40%;
 }
 
-#orderForm {
-  width: 700px;
-  height: 700px;
+#orderForm, .itemPanel {
+  width: 720px;
+  height: 720px;
   padding: 50px;
   position: absolute;
   margin: auto;
@@ -50,5 +67,8 @@ img {
   border-style: solid;
   border-radius: 6px;
   background-color:#ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+
