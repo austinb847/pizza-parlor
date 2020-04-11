@@ -15,21 +15,13 @@ Pizza.prototype.calcPrice = function() {
 
   this.price_toppings = this.toppings.length > 3 ? 5.74 : 3.50;
 
-  return this.price_size + this.price_toppings;
+  var price = this.price_size + this.price_toppings;
+  
+  return parseFloat(price.toFixed(2));
 
 }
 
-
-/* var pizza = new Pizza("medium", ["pepperoni", "olives", "mushrooms", "peppers"]);
-console.log(pizza.calcPrice());
-console.log(pizza.price_size);
-console.log(pizza.price_toppings); */
-
-
 //UI logic
-
-
-
 
 $(document).ready(function() {
 
@@ -83,9 +75,12 @@ $(document).ready(function() {
     
     var pizza = new Pizza(size_selection, topping_array);
     var price = pizza.calcPrice();
-    console.log(price);
-    /* $("form#orderForm").hide();
+    
+    $("form#orderForm").hide();
     $(".itemPanel").show();
-    $(".imgContainer").show(); */
+    
+    $(".order").append("<li>" + "Size cost: " + pizza.price_size + "</li>");
+    $(".order").append("<li>" + "Toppings cost: " + pizza.price_toppings + "</li>");
+    $(".itemPanel").append("<h3>" + "Your order Total: " + price);
   });
 });
